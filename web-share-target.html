@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>mobiForge | Web Share Target API | Share Target page</title>
+    <meta name="description" content="mobiForge HTML5 and mobile web examples">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="manifest.json">
+
+  </head>
+  <body>    
+  <h2>mobiForge web share target example page</h2>
+  <p>You shared:</p>
+  <div id="share_title"></div>
+  <div id="share_text"></div>
+  <div id="share_url"></div>
+  <div id="page_url"></div>
+    
+  <script>
+  window.addEventListener('load', function() {
+    var url = new URL(window.location.toString());
+    
+    document.querySelector('#share_title').innerHTML = 'Title: ' + url.searchParams.get('title');
+    document.querySelector('#share_text').innerHTML  = 'Text: ' + url.searchParams.get('text');
+    document.querySelector('#share_url').innerHTML   = 'URL: ' + url.searchParams.get('url');
+    document.querySelector('#page_url').innerHTML   = 'Page URL: ' + url;
+    console.log('UA:', navigator.userAgent);
+  });
+  </script>  
+  </body>
+</html>
