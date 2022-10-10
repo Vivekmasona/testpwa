@@ -1,6 +1,6 @@
 {
-  "name": "mobiForge Web examples",
-  "short_name": "mobiForge",
+  "name": "downloader",
+  "short_name": "pahilagana",
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#ffffff",
