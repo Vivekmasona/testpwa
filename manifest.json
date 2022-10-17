@@ -1,7 +1,16 @@
 {
   "name": "downloader",
   "short_name": "pahilagana",
+"share_target": {
+    "action": " /",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
   "start_url": "/",
+
   "display": "standalone",
   "theme_color": "#ffffff",
   "background_color":"#ffffff",
