@@ -21,3 +21,18 @@
   },
   "scope":"/"
 }
+"shortcuts" : [
+  {
+    "name": "Today's agenda",
+    "url": "/today",
+    "description": "List of events planned for today"
+  },
+  {
+    "name": "New event",
+    "url": "/create/event"
+  },
+  {
+    "name": "New reminder",
+    "url": "/create/reminder"
+  }
+]
